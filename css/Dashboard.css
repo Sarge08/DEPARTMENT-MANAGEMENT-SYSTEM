@@ -1,0 +1,11 @@
+﻿
+.box1{background-color:#83ead1;border-radius:3px;padding-left:15px;padding-right:15px; padding-top:10px;padding-bottom:2px;}
+.box2{background-color:#0ea5e9;border-radius:3px;padding-left:15px;padding-top:10px;padding-bottom:2px;}
+.box3{background-color:#eadd83;border-radius:3px;padding-left:15px;padding-top:10px;padding-bottom:2px;}
+.box4{background-color:#d483ea;border-radius:3px;padding-left:15px;padding-top:10px;padding-bottom:2px;}
+.box5{background-color:#b6ea83;border-radius:3px;padding-left:15px;padding-top:10px;padding-bottom:2px;}
+.box6{background-color:#ea83b7;border-radius:3px;padding-left:15px;padding-top:10px;padding-bottom:2px;}
+.boxtext{font-size:15px;}
+.lblmsg{font-size:50px;}
+.view{background-color:#e4e4ed;text-align:center;display:block;cursor:pointer;}
+#imginput{height:159px;}

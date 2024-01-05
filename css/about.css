@@ -1,0 +1,35 @@
+﻿
+.about-us{
+	background-color: #c1f0c1;
+}
+
+
+hr{
+	width: 10%;
+	border-width: 4px;
+	background-color: #e60073;
+	margin: auto;
+	margin-bottom: 80px;
+}
+	.aboutus{
+        color:navy;
+	}
+    .dptabout{
+        font-weight:bold;
+        color:black;
+            font-family:inherit;
+    }
+    .card-body{
+        text-align:center;
+    }
+    .NoticeHead{
+    background-color:brown;
+    color:white;
+    padding:10px;
+    margin-top:50px;
+    font-weight:100 bold;
+    margin-bottom:50px;
+}
+    .noticetbl{
+        margin-bottom:200px;
+    }

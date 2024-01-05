@@ -1,0 +1,42 @@
+﻿ @page { size: auto; margin: 20px;}
+ @media print{
+     /*.well-trans{background:wheat!important;-webkit-print-color-adjust: exact;}
+     .MyFavColor{color:#0b828e!important;-webkit-print-color-adjust: exact;}*/
+     thead{background:lightgrey!important;-webkit-print-color-adjust: exact;}
+     .container{padding-left:30px;padding-right:30px;padding-top:10px;}
+     .Gridview th{background:lightgrey!important;-webkit-print-color-adjust: exact;}
+ }
+ .FooterDiv{height:20px;padding-bottom:50px;}
+ .SignatureDiv{margin-top:40px;}
+ thead{background:lightgrey!important;}
+ table{width:100%;}
+ table, th, td {border: 1px solid #d8d0d0;}
+ th,td{padding:4px;font-size:12px!important;}
+ .PatientTableInfo{margin-top:15px;}
+ .PrintPageControl{margin-bottom:15px;}  
+ .header{border:1px solid black;border-style:dotted;} 
+ .header h4{font-weight:700;white-space:nowrap;}
+ .header h5{font-weight:700;white-space:nowrap;}
+ .header{padding:7px;}
+ .LogoImage{padding:12px;}
+ .HospitalInfo{padding-top:17px;position:relative;left:-20px;}
+ @media (max-width:768px){
+      .header h4{font-size:13px;}
+      .header h5{font-size:11px;}
+       .HospitalInfo{left:-18px;}
+ }   
+ .FirstColumn{width:15%;}
+ .SecondColumn{width:30%;}
+ .ThirdColumn{width:45%;}
+ .FourthColumn{width:10%;}
+ /*Discharge Summary*/
+ .DischargeSummaryBody{padding:15px;padding-top:0px!important;}
+ .DischargeSummaryBody .BoldFont{font-weight:700;}
+ .DischargeSummaryBody h5{margin-top:5px;margin-bottom:5px;line-height:18px;}
+ .DischargeSummaryBody .NormalFont{font-weight:100;}
+ /*Advance Slip*/ 
+ .BorderBottom {border: 1px solid black;border-style: dotted;border-top: none; border-left: none;border-right: none;padding-bottom: 5px;}
+.AdvanceBody h4{font-size:14px;margin-top:5px;margin-bottom:5px;}
+.AdvanceBody h5{color:black;}
+.BottomPart{margin-top:10px;}
+.BottomPart h6{position:relative;top:-15px;}

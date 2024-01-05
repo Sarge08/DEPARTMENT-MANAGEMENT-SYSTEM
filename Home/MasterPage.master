@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Home_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>Home</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/homepage.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+ <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="row">
+       <div class="col-lg-12">
+           <div class="head1">
+               <h1 class="headtext">Department of ITM</h1>
+           </div>
+       </div>
+         </div>  
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="head2">
+               <center> <img src="../Img/download.png" class="logo1" /> </center> 
+                </div>
+            </div>
+      </div>
+         <header class="head-area">
+            <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <h1><span>IT</span>M</h1>
+                </div>
+                <div class="mobile-nav">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="menu">
+                    <ul class="menu1">
+                        <li><a href="Default.aspx" >Home</a></li>
+                        <li><a href="AboutUs.aspx" class="">About us</a></li>
+                        <li><a href="Faculty.aspx" class="">Faculty</a></li>
+                        <li><a href="HomeNoticeBoard.aspx" class="">Notice</a></li>
+                        <li><a href="Question.aspx" class="">Question Bank</a></li>
+                        <li><a href="../login.aspx" class="">Login</a></li>
+                         <li><a href="Academic.aspx" class="">Academic</a></li>
+                        <li><a href="Placement.aspx" class="">Placement</a></li>
+                        <li><a href="Gallery.aspx" class="">Gallery</a></li>
+                        <li><a href="ContactUs.aspx" class="">Contact us</a></li>
+                        <li><a href="#" class="">                       
+                    </ul>
+                </div>
+            </div>
+                </div>
+        </header>
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+      <footer>
+  <div class="social">
+    <h2 class="txth5">Developed by Sagar ,Geeti,Twinkle,Banshita,Sipya</h2>
+    <ul class="wrapper">
+      <a href="#" target="_blank">
+        <li class="icon linkedin">
+          <span class="tooltip">LinkedIn</span>
+          <span><i class="fab fa-linkedin"></i></span>
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li class="icon github">
+          <span class="tooltip">GitHub</span>
+          <span><i class="fab fa-github"></i></span>
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <span><i class="fab fa-instagram"></i></span>
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <span><i class="fab fa-twitter"></i></span>
+        </li>
+      </a>
+      <a href="#" target="_blank">
+        <li class="icon github">
+          <span class="tooltip">CodePen</span>
+          <span><i class="fab fa-codepen"></i></span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div class="final_text"></div>
+</footer>
+        <script src="../js/Jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  
+      <script>
+        $(document).ready(function () {
+            $(".mobile-nav i").click(function () {
+                $(".menu").toggleClass('mobile-menu');
+            });
+        })
+    </script>
+</body>
+</html>

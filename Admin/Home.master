@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Admin_Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>RAVENSHAWUNIVERDITY-ADMIN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/FloatingPlaceholder.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/MainStyleSheet.css" rel="stylesheet" />
+    <link href="../css/select2.css" rel="stylesheet" />
+    <link href="../css/anypicker-all.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <nav class="navbar navbar-inverse navbar-static-top TopNavbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="text-center">DEPARTMENT OF ITM </h3>
+                        <h4 class="text-center">Ravenshaw university, Cuttack, Odisha 753003</h4>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-target="#Navabar" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand visible-xs">
+                        <a href="#">
+                            <img src="../img/logocolor.png" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse" id="Navabar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active">
+                            <a href="Default.aspx" class="text-center">
+                                <div class="Block">
+                                    <img src="../img/HomeIconColor.png" />
+                                </div>
+                                My Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">
+                                <div class="Block">
+                                    <img src="../img/MasterIcon.png" />
+                                </div>
+                                Manage Master  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ManageNotice.aspx">Add Notice Details</a></li>
+                                <li><a href="AddQuestion.aspx">Add Question Details</a></li>
+                                  <li><a href="AddSyllabus.aspx">Add Syllabus Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">
+                                <div class="Block">
+                                    <img src="../img/EmployeeRegd.png" />
+                                </div>
+                                Manage Student  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AddStudentDetails.aspx">Upload Student Details</a></li>
+                            </ul>
+                        </li>
+                           <li>
+                            <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">
+                                <div class="Block">
+                                    <img src="../img/DailyTaskIcon.png" />
+                                </div>
+                                Manage Teacher  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AddEmployeeDetails.aspx">Add Teacher Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">
+                                <div class="Block">
+                                    <img src="../img/ReportIcon.png" />
+                                </div>
+                                All Reports  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                               <li><a href="FeedBackReprt.aspx">Feedback Report</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">
+                                <div class="Block">
+                                    <img src="../img/ProfileIconColor.png" />
+                                </div>
+                                <asp:Label ID="lblName" runat="server"></asp:Label>
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Change My Password</a></li>
+                                <li>
+                                    <asp:LinkButton ID="btnLogout" OnClick="btnLogout_Click" runat="server">Logout</asp:LinkButton></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <h4 class="text-left">© 2023 Dept of ITM RU, All rights reserved.</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <h4 class="text-right">Designed & Developed by Sagar,Geeti,Twinkle,Banshita,Sipya</h4>                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loader"></div>
+    </form>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/select2.full.js"></script>
+    <script src="../js/IMS_Script.js"></script>
+</body>
+</html>
